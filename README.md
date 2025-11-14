@@ -138,7 +138,6 @@ Yes! Prettier Rust formats most nightly features. Support depends on [`jinx-rust
 - ### `Recommended` Extension Standalone
 
   _Easy install + auto-updates_
-
   - VSCode | Search and install `Prettier - Code formatter (Rust)` [[direct link]](https://marketplace.visualstudio.com/items?itemName=jinxdash.prettier-rust)
 
   - _Request your favorite editor:_ [[file an issue]](https://github.com/jinxdash/prettier-plugin-rust/issues/new)
@@ -163,7 +162,6 @@ Yes! Prettier Rust formats most nightly features. Support depends on [`jinx-rust
 - ### Command line
 
   _Requires [NodeJS](https://nodejs.dev/download/)_
-
   - Install `prettier` and `prettier-plugin-rust` globally
 
     ```sh
@@ -179,7 +177,6 @@ Yes! Prettier Rust formats most nightly features. Support depends on [`jinx-rust
 - ### NodeJS package
 
   _Requires [NodeJS](https://nodejs.dev/download/)_
-
   - Install `prettier` and `prettier-plugin-rust` in the project
 
     ```sh
@@ -201,8 +198,8 @@ Yes! Prettier Rust formats most nightly features. Support depends on [`jinx-rust
   - You can also use the plugin programmatically:
 
     ```ts
-    import prettier from "prettier";
-    import * as rustPlugin from "prettier-plugin-rust";
+    import prettier from 'prettier';
+    import * as rustPlugin from 'prettier-plugin-rust';
 
     prettier.format(code, { plugins: [rustPlugin] });
     ```
@@ -222,7 +219,6 @@ Yes! Prettier Rust formats most nightly features. Support depends on [`jinx-rust
   All-in-all the difference in code style is minimal, so adopting Prettier Rust won't drastically change your codebase. The real downside is the harsher integration with the Rust ecosystem, but it'll get better eventually.
 
   Point by point:
-
   - the extension streamlines your work in the editor
     - it can format code that won't compile _(e.g. code with missing type annotations)_
     - it autocorrects syntax errors _(e.g. missing semicolons, blocks, parentheses...)_

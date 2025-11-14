@@ -1,72 +1,53 @@
 {
-	"name": "prettier-plugin-rust",
-	"version": "0.1.9",
-	"description": "Prettier plugin for Rust",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/jinxdash/prettier-plugin-rust.git"
-	},
-	"author": "jinxdash <jinxdash.github@gmail.com> (https://github.com/jinxdash)",
-	"keywords": [
-		"prettier",
-		"formatter",
-		"rust"
-	],
-	"license": "MIT",
-	"type": "module",
-	"main": "index.cjs",
-	"module": "index.js",
-	"types": "index.d.ts",
-	"exports": {
-		"./package.json": "./package.json",
-		".": {
-			"require": "./index.cjs",
-			"import": "./index.js"
-		}
-	},
-	"files": [
-		"index.js",
-		"index.cjs",
-		"index.d.ts",
-		"package.json",
-		"LICENSE"
-	],
-	"scripts": {
-		"build": "ts-node ./scripts/build.ts && ts-node ./tests/test.build.ts",
-		"test-build": "ts-node ./tests/test.build.ts",
-		"test-print-samples": "ts-node ./tests/print.ts",
-		"dev-repl": "ts-node ./scripts/dev.repl.ts",
-		"dev-format-local": "ts-node ./scripts/dev.format.ts"
-	},
-	"devDependencies": {
-		"@swc/core": "^1.2.248",
-		"@types/node": "^18.0.6",
-		"@types/prettier": "^2.7.0",
-		"ts-node": "^10.9.1",
-		"tsup": "^6.2.3",
-		"typescript": "^4.8.2"
-	},
-	"dependencies": {
-		"jinx-rust": "0.1.6",
-		"prettier": "^2.7.1"
-	},
-	"prettier": {
-		"printWidth": 140,
-		"semi": true,
-		"tabWidth": 4,
-		"useTabs": true,
-		"endOfLine": "lf",
-		"overrides": [
-			{
-				"files": [
-					"**/*.md"
-				],
-				"options": {
-					"printWidth": 80,
-					"useTabs": false,
-					"tabWidth": 2
-				}
-			}
-		]
-	}
+  "name": "@woheedev/prettier-plugin-rust",
+  "version": "0.2.0",
+  "author": "Wohee",
+  "description": "Prettier plugin for Rust",
+  "license": "AGPL-3.0-or-later",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "ts-node ./scripts/build.ts",
+    "test-build": "ts-node ./tests/test.build.ts",
+    "test-print-samples": "ts-node ./tests/print.ts",
+    "dev-repl": "ts-node ./scripts/dev.repl.ts",
+    "dev-format-local": "ts-node ./scripts/dev.format.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@swc/core": "^1.15.1",
+    "@types/node": "^24.10.1",
+    "@types/prettier": "^3.0.0",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "jinx-rust": "0.1.6",
+    "prettier": "^3.6.2"
+  },
+  "keywords": [
+    "prettier",
+    "formatter",
+    "rust"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/woheedev/bptimer.git",
+    "directory": "packages/prettier-plugin-rust"
+  }
 }

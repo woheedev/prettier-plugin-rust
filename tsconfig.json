@@ -1,8 +1,10 @@
 {
-	"extends": "./tsconfig.base.json",
-	"include": ["src"],
-	"compilerOptions": {
-		"types": ["prettier", "jinx-rust"],
-		"rootDir": "src"
-	}
+  "extends": "./tsconfig.base.json",
+  "include": ["src/**/*"],
+  "compilerOptions": {
+    "types": ["prettier", "jinx-rust"],
+    "rootDir": "src",
+    "outDir": "dist",
+    "composite": false
+  }
 }

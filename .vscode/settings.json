@@ -1,7 +1,5 @@
 {
-  "npm.exclude": [
-    "**/ext/jinx-rust"
-  ],
+  "npm.exclude": ["**/ext/jinx-rust"],
   "files.exclude": {
     "ext": true
   }

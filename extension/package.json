@@ -1,60 +1,60 @@
 {
-	"icon": "icon.png",
-	"name": "prettier-rust",
-	"publisher": "jinxdash",
-	"displayName": "Prettier - Code formatter (Rust)",
-	"description": "Prettier Rust is a code formatter that autocorrects bad syntax",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/jinxdash/prettier-plugin-rust.git",
-		"directory": "extension"
-	},
-	"author": "jinxdash <jinxdash.github@gmail.com> (https://github.com/jinxdash)",
-	"version": "0.1.9",
-	"engines": {
-		"vscode": "^1.69.0"
-	},
-	"categories": [
-		"Formatters"
-	],
-	"keywords": [
-		"rust",
-		"formatter",
-		"prettier"
-	],
-	"scripts": {
-		"bundle": "esbuild src/index.ts --bundle --outfile=index.js --format=cjs --platform=node --external:vscode",
-		"watch": "pnpm run bundle --watch",
-		"package": "pnpm run bundle && pnpm vsce package --no-dependencies",
-		"publish": "pnpm vsce publish --no-dependencies"
-	},
-	"contributes": {
-		"languages": [
-			{
-				"id": "rust",
-				"aliases": [
-					"rs"
-				],
-				"extensions": [
-					"rs"
-				]
-			}
-		]
-	},
-	"devDependencies": {
-		"@types/node": "^18.0.6",
-		"@types/vscode": "^1.69.0",
-		"@vscode/vsce": "^3.6.2",
-		"esbuild": "^0.14.49",
-		"typescript": "^4.7.4"
-	},
-	"dependencies": {
-		"jinx-rust": "0.1.6",
-		"prettier": "^2.7.1",
-		"prettier-plugin-rust": "workspace:prettier-plugin-rust"
-	},
-	"main": "index.js",
-	"activationEvents": [
-		"onStartupFinished"
-	]
+  "icon": "icon.png",
+  "name": "prettier-rust",
+  "publisher": "woheedev",
+  "displayName": "Prettier - Code formatter (Rust)",
+  "description": "Prettier Rust is a code formatter that autocorrects bad syntax",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/woheedev/bptimer.git",
+    "directory": "packages/prettier-plugin-rust/extension"
+  },
+  "author": "Wohee",
+  "version": "0.1.9",
+  "engines": {
+    "vscode": "^1.69.0"
+  },
+  "categories": [
+    "Formatters"
+  ],
+  "keywords": [
+    "rust",
+    "formatter",
+    "prettier"
+  ],
+  "scripts": {
+    "bundle": "esbuild src/index.ts --bundle --outfile=index.js --format=cjs --platform=node --external:vscode",
+    "watch": "pnpm run bundle --watch",
+    "package": "pnpm run bundle && pnpm vsce package --no-dependencies",
+    "publish": "pnpm vsce publish --no-dependencies"
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "rust",
+        "aliases": [
+          "rs"
+        ],
+        "extensions": [
+          "rs"
+        ]
+      }
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "@types/vscode": "^1.106.0",
+    "@vscode/vsce": "^3.7.0",
+    "esbuild": "^0.27.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "jinx-rust": "0.1.6",
+    "prettier": "^3.6.2",
+    "@woheedev/prettier-plugin-rust": "file:../"
+  },
+  "main": "index.js",
+  "activationEvents": [
+    "onStartupFinished"
+  ]
 }

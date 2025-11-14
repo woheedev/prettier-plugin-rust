@@ -1,13 +1,13 @@
 {
-	"extends": "./tsconfig.base.json",
-	"include": ["src"],
-	"compilerOptions": {
-		"composite": false,
-		"isolatedModules": false,
-		"preserveConstEnums": false,
-		"removeComments": true,
-		"inlineSourceMap": false,
-		"sourceMap": false,
-		"declaration": false
-	}
+  "extends": "./tsconfig.base.json",
+  "include": ["src"],
+  "compilerOptions": {
+    "composite": false,
+    "isolatedModules": false,
+    "preserveConstEnums": false,
+    "removeComments": true,
+    "inlineSourceMap": false,
+    "sourceMap": false,
+    "declaration": false
+  }
 }

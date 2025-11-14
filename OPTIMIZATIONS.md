@@ -69,12 +69,10 @@ This document summarizes the performance optimizations applied to the prettier-p
 ### High Priority
 
 1. **Cache Frequently Computed Values**
-
    - Consider memoizing `printTypeArguments` results
    - Cache complex type checking results
 
 2. **Reduce String Allocations**
-
    - Use string builders for large concatenations
    - Consider string interning for repeated values
 
@@ -85,7 +83,6 @@ This document summarizes the performance optimizations applied to the prettier-p
 ### Medium Priority
 
 4. **Parallel Processing**
-
    - Consider worker threads for independent file formatting
    - Parallelize AST transformation where possible
 

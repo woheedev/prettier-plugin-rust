@@ -137,7 +137,6 @@ Yes! Prettier Rust formats most nightly features. Support depends on [`jinx-rust
 - ### Command line
 
   _Requires [NodeJS](https://nodejs.dev/download/)_
-
   - Install `prettier` and `prettier-plugin-rust` globally
 
     ```sh
@@ -153,7 +152,6 @@ Yes! Prettier Rust formats most nightly features. Support depends on [`jinx-rust
 - ### NodeJS package
 
   _Requires [NodeJS](https://nodejs.dev/download/)_
-
   - Install `prettier` and `prettier-plugin-rust` in the project
 
     ```sh
@@ -187,7 +185,6 @@ Yes! Prettier Rust formats most nightly features. Support depends on [`jinx-rust
   All-in-all the difference in code style is minimal, so adopting Prettier Rust won't drastically change your codebase. The real downside is the harsher integration with the Rust ecosystem, but it'll get better eventually.
 
   Point by point:
-
   - the extension streamlines your work in the editor
     - it can format code that won't compile _(e.g. code with missing type annotations)_
     - it autocorrects syntax errors _(e.g. missing semicolons, blocks, parentheses...)_
@@ -206,7 +203,7 @@ Yes! Prettier Rust formats most nightly features. Support depends on [`jinx-rust
 
   Prettier Rust however is based on [jinx-rust](https://github.com/jinxdash/jinx-rust). Jinx-rust is built specifically for Rust tooling. Hence it's designed to tolerate a wide range of syntax errors, supports missing nodes and sometimes even infers user intent (e.g. Javascript's `!==`)
 
-  Jinx-rust has a little *plaidoyer* in its readme arguing for Rust Tooling *not* to use the official rustc parser [here](https://github.com/jinxdash/jinx-rust#why-jinx-rust-and-why-in-typescript).
+  Jinx-rust has a little _plaidoyer_ in its readme arguing for Rust Tooling _not_ to use the official rustc parser [here](https://github.com/jinxdash/jinx-rust#why-jinx-rust-and-why-in-typescript).
 
 - ### _When exactly does Prettier Rust change code syntax?_
 

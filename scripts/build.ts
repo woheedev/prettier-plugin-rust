@@ -1,19 +1,19 @@
-import { build } from "tsup";
-import { createStripPlugin } from "../ext/jinx-rust/scripts/utils/build.js";
+import { build } from 'tsup';
 
 await build({
-	dts: true,
-	tsconfig: "tsconfig.build.json",
-	entry: ["src/index.ts"],
-	external: ["jinx-rust"],
-	outDir: ".",
-	format: ["cjs", "esm"],
-	plugins: [createStripPlugin({ labels: ["__DEV__"], functionCalls: ["devonly"] })],
-	treeshake: {
-		preset: "smallest",
-		moduleSideEffects: false,
-		propertyReadSideEffects: false,
-		tryCatchDeoptimization: false,
-		unknownGlobalSideEffects: false,
-	},
+  dts: {
+    resolve: true
+  },
+  tsconfig: 'tsconfig.json',
+  entry: ['src/index.ts'],
+  external: ['jinx-rust'],
+  outDir: 'dist',
+  format: ['cjs', 'esm'],
+  treeshake: {
+    preset: 'smallest',
+    moduleSideEffects: false,
+    propertyReadSideEffects: false,
+    tryCatchDeoptimization: false,
+    unknownGlobalSideEffects: false
+  }
 });

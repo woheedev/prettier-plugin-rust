@@ -1,4 +1,4 @@
-import { plugin } from "./format/plugin";
+import { plugin } from './format/plugin';
 
 export default plugin;
 export const languages = plugin.languages;
